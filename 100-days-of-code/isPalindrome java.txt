@@ -1,0 +1,20 @@
+class Solution
+{
+int isPlaindrome(String S)
+{
+String rev="";
+int length=S.length();
+for(int i=length-1;i>=0;i--)
+{
+rev=rev+S.charAt(i);
+}
+if(S.equals(rev))
+{
+return 1;
+}
+else
+{
+return 0;
+}
+}
+};
